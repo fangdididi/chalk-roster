@@ -1,0 +1,33 @@
+{
+  "channel": {
+    "name": "your-faceless-channel",
+    "lock_style_across_episodes": true
+  },
+  "vo_lang": "en",
+  "style": {
+    "aspect_ratio": "9:16",
+    "line_weight": "medium",
+    "head_fill": "hollow",
+    "limb_rule": "two-arms-two-legs",
+    "bg_rule": "flat-black",
+    "max_accent_colors": 3,
+    "accent_colors": ["vivid red", "electric blue", "warm gold"],
+    "fingerprint": "hollow-head/medium-line/flat-black/3-accent"
+  },
+  "cast": [
+    {
+      "id": "guide",
+      "role": "narrator-avatar",
+      "silhouette": "tall-thin",
+      "markers": ["red beanie", "yellow shirt"],
+      "forbid": ["photoreal face", "extra arms"]
+    },
+    {
+      "id": "rival",
+      "role": "foil",
+      "silhouette": "short-round",
+      "markers": ["blue scarf"],
+      "forbid": ["red beanie"]
+    }
+  ]
+}

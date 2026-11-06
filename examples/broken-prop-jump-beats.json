@@ -1,0 +1,60 @@
+{
+  "title": "episode-title",
+  "target_duration_s": 30,
+  "hook_deadline_s": 5,
+  "vo_lang": "en",
+  "shots": [
+    {
+      "id": "s1",
+      "duration_s": 5,
+      "kind": "hook",
+      "hook": true,
+      "cast": [
+        "guide"
+      ],
+      "action": "guide snaps fingers; cache meter flashes wrong",
+      "vo_words": 12,
+      "vo": "Your cache just lied to you.",
+      "props": {
+        "meter": "guide"
+      }
+    },
+    {
+      "id": "s2",
+      "duration_s": 10,
+      "cast": [
+        "guide",
+        "rival"
+      ],
+      "action": "rival steals the meter; guide points at the jump",
+      "vo_words": 22,
+      "vo": "Watch the number jump while nothing on disk changed.",
+      "props": {
+        "meter": "rival"
+      },
+      "travel": true,
+      "screen_dir": "R"
+    },
+    {
+      "id": "s3",
+      "duration_s": 15,
+      "cast": [
+        "guide"
+      ],
+      "action": "guide redraws the meter as a truthful timeline",
+      "vo_words": 30,
+      "vo": "Redraw the meter as a timeline and the lie disappears.",
+      "props": {
+        "meter": "guide"
+      },
+      "transfer": true,
+      "transfers": [
+        {
+          "prop": "meter",
+          "from": "rival",
+          "to": "guide"
+        }
+      ]
+    }
+  ]
+}
